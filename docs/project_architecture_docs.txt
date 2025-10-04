@@ -1,4 +1,7 @@
 
+## Before Make the Commit Run: pre-commit run --all-files
+
+
 ---------------------project architecture documentation--------------------
 
 my_sample_project/
