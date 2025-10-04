@@ -1,0 +1,54 @@
+
+---------------------project architecture documentation--------------------
+
+my_sample_project/
+├── .github/                    # GitHub workflows for CI/CD
+│   └── workflows/
+│       ├── ci.yml              # CI pipeline
+│       └── cd.yml              # CD pipeline (deploy)
+├── docs/                        # Project documentation
+│   └── index.md
+├── src/                        # Source code
+│   └── my_sample_project/
+│       ├── __init__.py
+│       ├── main.py
+│       └── utils.py
+├── tests/                       # Unit & integration tests
+│   ├── __init__.py
+│   ├── test_main.py
+│   └── test_utils.py
+├── scripts/                     # Utility scripts
+│   └── setup_env.sh
+├── .gitignore
+├── .pre-commit-config.yaml      # Pre-commit hooks
+├── pyproject.toml               # Build system and dependency info
+├── setup.cfg                    # Linter, formatter configs
+├── requirements.txt
+├── README.md
+└── LICENSE
+--------------------------------------------------------------------------
+
+Tests ফোল্ডার স্ট্রাকচার
+====================
+ - tests ফোল্ডার প্রোজেক্ট root এ রাখবেন।
+ 
+ - প্রত্যেকটি source file এর জন্য একটি test file বানাবেন।
+    উদাহরণ: utils.py → test_utils.py
+             main.py → test_main.py
+ 
+ - test ফাইলের নাম test_*.py হতে হবে, কারণ pytest এই নামের ফাইল খুঁজে নেয়।
+
+ - test ফাংশনের নাম test_* দিয়ে শুরু হতে হবে।
+
+
+
+
+
+
+
+
+
+
+
+
+
