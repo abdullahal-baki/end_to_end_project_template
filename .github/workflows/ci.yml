@@ -34,7 +34,7 @@ jobs:
       # 4️⃣ Run pre-commit auto-fix (ignore exit code)
       - name: Run pre-commit auto-fix
         run: |
-          pre-commit run --all-files || echo "Auto-fixes applied"
+          pre-commit run --all-files
 
       # 5️⃣ Lint check (flake8)
       - name: Run flake8
